@@ -1,0 +1,41 @@
+name: smart_education_app
+description: A smart education app with AI, ML, and NLP integration.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.14.0
+  provider: ^6.0.3
+  intl: ^0.18.0
+  flutter_svg: ^2.0.1
+  shared_preferences: ^2.0.15
+  json_annotation: ^4.7.0
+
+  # ML & NLP related dependencies
+  tflite_flutter: ^0.10.0
+  google_ml_kit: ^0.15.0
+  flutter_bloc: ^8.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.3.3
+  json_serializable: ^6.5.4
+  mockito: ^5.3.2
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/fonts/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
